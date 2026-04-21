@@ -167,6 +167,45 @@ h2{font-size:clamp(1.9rem,3.5vw,2.7rem);font-weight:800;letter-spacing:-.03em;co
 .clink svg{width:24px;height:24px}
 .clink span{font-family:var(--fm);font-size:.7rem;color:rgba(255,255,255,.35)}
 
+/* ─── LINKEDIN POSTS ─── */
+.linkedin-bg{background:var(--light)}
+.li-posts-grid{display:grid;grid-template-columns:1fr 340px;gap:2rem;align-items:start}
+.li-post-card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow)}
+.li-post-header{display:flex;align-items:center;gap:.9rem;padding:1.25rem 1.5rem;border-bottom:1px solid var(--border)}
+.li-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--teal));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;color:#fff;flex-shrink:0}
+.li-name{font-weight:700;font-size:.95rem;color:var(--navy)}
+.li-role{font-size:.78rem;color:var(--muted);margin-top:2px}
+.li-follow-btn{margin-left:auto;display:inline-flex;align-items:center;gap:.4rem;padding:.4rem 1rem;background:var(--blue-light);color:var(--blue);border-radius:20px;font-size:.8rem;font-weight:600;text-decoration:none;transition:all .2s;white-space:nowrap}
+.li-follow-btn:hover{background:var(--blue);color:#fff}
+.li-embed-wrap{padding:1rem 1.25rem;background:#f8faff}
+.li-embed-wrap iframe{border-radius:10px;display:block;min-height:400px}
+.li-view-all{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:1rem;font-size:.85rem;font-weight:600;color:var(--blue);text-decoration:none;border-top:1px solid var(--border);transition:background .2s}
+.li-view-all:hover{background:var(--blue-light)}
+
+/* Side panel */
+.li-side-panel{display:flex;flex-direction:column;gap:1.25rem}
+.li-profile-card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow)}
+.li-profile-banner{height:70px;background:linear-gradient(135deg,var(--navy),#1d4ed8,var(--teal))}
+.li-profile-body{padding:0 1.25rem 1.5rem;text-align:center}
+.li-profile-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--teal));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.2rem;color:#fff;margin:-32px auto 1rem;border:3px solid #fff;box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.li-profile-name{font-weight:800;font-size:1rem;color:var(--navy);margin-bottom:.2rem}
+.li-profile-title{font-size:.82rem;color:var(--muted);margin-bottom:.3rem}
+.li-profile-company{font-size:.78rem;color:var(--blue);font-weight:500;margin-bottom:1.2rem}
+.li-profile-stats{display:flex;justify-content:center;gap:1.5rem;padding:1rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:1.2rem}
+.li-stat{text-align:center}
+.li-stat strong{display:block;font-size:1.1rem;font-weight:800;color:var(--navy)}
+.li-stat span{font-size:.72rem;color:var(--muted)}
+.li-connect-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.5rem;background:var(--blue);color:#fff;border-radius:8px;font-size:.85rem;font-weight:700;text-decoration:none;transition:all .2s;width:100%;justify-content:center}
+.li-connect-btn:hover{background:#1558d4;transform:translateY(-1px)}
+
+.li-topics-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:1.5rem;box-shadow:var(--card-shadow)}
+.li-topics-title{font-weight:700;font-size:.88rem;color:var(--navy);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+.li-topics-grid{display:flex;flex-wrap:wrap;gap:.5rem}
+.li-topic{font-size:.8rem;padding:.35rem .75rem;background:var(--light);border:1px solid var(--border);border-radius:20px;color:var(--muted);font-weight:500;transition:all .2s}
+.li-topic:hover{background:var(--blue-light);border-color:var(--blue);color:var(--blue)}
+
+@media(max-width:900px){.li-posts-grid{grid-template-columns:1fr}.li-side-panel{display:none}}
+
 /* ─── FOOTER ─── */
 footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding:1.8rem 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .ftxt{font-size:.82rem;color:rgba(255,255,255,.3);font-family:var(--fm)}
@@ -206,6 +245,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#blog">Blog</a>
+    <a href="#linkedin-posts">LinkedIn</a>
     <a href="#contact" class="nav-btn">Get in Touch</a>
   </div>
 </nav>
@@ -468,6 +508,73 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
   </div>
 </section>
 
+<!-- ─── LINKEDIN POSTS ─── -->
+<section id="linkedin-posts" class="linkedin-bg">
+  <div class="container">
+    <div class="section-label">LinkedIn Activity</div>
+    <h2>Latest from LinkedIn</h2>
+    <p class="section-sub">Thoughts, insights and cloud architecture updates I share with my network.</p>
+    <div class="li-posts-grid">
+
+      <div class="li-post-card reveal">
+        <div class="li-post-header">
+          <div class="li-avatar">RE</div>
+          <div>
+            <div class="li-name">Raghavendra Eranki</div>
+            <div class="li-role">Solutions Architect @ digi edZe</div>
+          </div>
+          <a href="https://www.linkedin.com/in/eranki-raghavendra-043978b7/" target="_blank" class="li-follow-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+            Follow
+          </a>
+        </div>
+        <div class="li-embed-wrap">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7452230040202739712?collapsed=1" height="400" width="100%" frameborder="0" allowfullscreen="" title="Embedded post" loading="lazy"></iframe>
+        </div>
+        <a href="https://www.linkedin.com/in/eranki-raghavendra-043978b7/" target="_blank" class="li-view-all">
+          View all posts on LinkedIn
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+
+      <div class="li-side-panel reveal">
+        <div class="li-profile-card">
+          <div class="li-profile-banner"></div>
+          <div class="li-profile-body">
+            <div class="li-profile-avatar">RE</div>
+            <div class="li-profile-name">Raghavendra Eranki</div>
+            <div class="li-profile-title">Solutions Architect · Cloud &amp; SRE Expert</div>
+            <div class="li-profile-company">digi edZe Soft Solutions · Hyderabad, India</div>
+            <div class="li-profile-stats">
+              <div class="li-stat"><strong>15+</strong><span>Years Exp.</span></div>
+              <div class="li-stat"><strong>4+</strong><span>Clouds</span></div>
+              <div class="li-stat"><strong>3</strong><span>Regions</span></div>
+            </div>
+            <a href="https://www.linkedin.com/in/eranki-raghavendra-043978b7/" target="_blank" class="li-connect-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="li-topics-card">
+          <div class="li-topics-title">Topics I Write About</div>
+          <div class="li-topics-grid">
+            <span class="li-topic">☁️ OCI Architecture</span>
+            <span class="li-topic">🔁 Cloud Migration</span>
+            <span class="li-topic">🛡️ Disaster Recovery</span>
+            <span class="li-topic">📊 Observability</span>
+            <span class="li-topic">🤖 AIOps &amp; GenAI</span>
+            <span class="li-topic">🐧 Linux / SRE</span>
+            <span class="li-topic">☸️ Kubernetes</span>
+            <span class="li-topic">💰 FinOps</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ─── CONTACT ─── -->
 <section id="contact" class="contact-bg">
   <div class="container">
@@ -481,7 +588,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
           LinkedIn
           <span>Connect with me</span>
         </a>
-        <a href="mailto:raghavendra@digiedze.com" class="clink">
+        <a href="mailto:raghavendra.eranki@gmail.com" class="clink">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           Email
           <span>Send a message</span>
