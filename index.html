@@ -7,7 +7,7 @@
 <meta name="description" content="Cloud Architect with 15+ years in Linux/SRE, OCI, Multicloud & AIOps. Solutions Architect at digi edZe Soft Solutions. Hyderabad, India."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -18,7 +18,7 @@
   --white:#ffffff;--border:#e2e8f5;
   --card-shadow:0 4px 24px rgba(10,22,40,.08);
   --card-shadow-h:0 12px 40px rgba(29,107,243,.15);
-  --fo:'Outfit',sans-serif;--fm:'JetBrains Mono',monospace;
+  --fo:'Plus Jakarta Sans',sans-serif;--fh:'Space Grotesk',sans-serif;--fm:'JetBrains Mono',monospace;
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--fo);font-size:16px;line-height:1.7;color:var(--text);overflow-x:hidden;background:var(--white)}
@@ -57,7 +57,7 @@ body{font-family:var(--fo);font-size:16px;line-height:1.7;color:var(--text);over
 /* Hero text */
 .hero-text{}
 .hero-eyebrow{font-family:var(--fm);font-size:.78rem;color:var(--teal);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.2rem;opacity:0;animation:slideUp .6s .2s forwards}
-h1{font-size:clamp(2.8rem,5.5vw,4.6rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;color:#fff;margin-bottom:1.5rem;opacity:0;animation:slideUp .6s .4s forwards}
+h1{font-family:var(--fh);font-size:clamp(2.8rem,5.5vw,4.6rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;color:#fff;margin-bottom:1.5rem;opacity:0;animation:slideUp .6s .4s forwards}
 h1 span{color:var(--teal)}
 .hero-desc{font-size:1.08rem;color:rgba(255,255,255,.65);max-width:520px;line-height:1.85;margin-bottom:2.5rem;opacity:0;animation:slideUp .6s .6s forwards}
 .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:slideUp .6s .75s forwards}
@@ -84,7 +84,7 @@ h1 span{color:var(--teal)}
 section{padding:6rem 5vw}
 .container{max-width:1200px;margin:0 auto}
 .section-label{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--fm);font-size:.72rem;color:var(--blue);letter-spacing:.12em;text-transform:uppercase;background:var(--blue-light);padding:.3rem .8rem;border-radius:20px;margin-bottom:1rem;font-weight:500}
-h2{font-size:clamp(1.9rem,3.5vw,2.7rem);font-weight:800;letter-spacing:-.03em;color:var(--navy);margin-bottom:.6rem;line-height:1.2}
+h2{font-family:var(--fh);font-size:clamp(1.9rem,3.5vw,2.7rem);font-weight:800;letter-spacing:-.03em;color:var(--navy);margin-bottom:.6rem;line-height:1.2}
 .section-sub{color:var(--muted);font-size:1rem;max-width:500px;margin-bottom:3rem}
 
 /* ─── ABOUT ─── */
@@ -231,7 +231,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
   .skills-grid{grid-template-columns:1fr}
   .stat-bar{flex-wrap:wrap;gap:1.5rem}
   .stat-item{border-right:none;padding:0}
-  h1{font-size:2.6rem}
+  h1{font-family:var(--fh);font-size:2.6rem}
 }
 </style>
 </head>
@@ -295,7 +295,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
       <div class="avatar-role">solutions_architect.oci</div>
       <div class="avatar-badges">
         <div class="abadge"><span class="dot"></span>OCI Certified Architect</div>
-        <div class="abadge"><span class="dot"></span>GCP Professional</div>
+        <div class="abadge"><span class="dot"></span>CKA — Certified Kubernetes Admin</div>
         <div class="abadge"><span class="dot"></span>digi edZe · DRCC Partner</div>
         <div class="abadge"><span class="dot"></span>15+ yrs Linux / SRE</div>
         <div class="abadge"><span class="dot"></span>Hyderabad, India 🇮🇳</div>
@@ -340,7 +340,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
         <div class="iblock">
           <div class="iblock-hd">Certifications &amp; Credentials</div>
           <div class="irow"><div class="irow-icon ic-b">☁️</div>Oracle Cloud Infrastructure (OCI)</div>
-          <div class="irow"><div class="irow-icon ic-b">🌐</div>Google Cloud Professional (GCP)</div>
+          <div class="irow"><div class="irow-icon ic-b">☸️</div>CKA — Certified Kubernetes Administrator</div>
           <div class="irow"><div class="irow-icon ic-b">🎓</div>Google Associate Cloud Engineer</div>
           <div class="irow"><div class="irow-icon ic-g">🏢</div>digi edZe — OCI DRCC Partner</div>
           <div class="irow"><div class="irow-icon ic-g">🤝</div>GCP Registered Partner (5 Paths)</div>
@@ -528,9 +528,22 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
             Follow
           </a>
         </div>
+
+        <!-- Latest embedded post (update iframe src when you have a new post) -->
         <div class="li-embed-wrap">
           <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7452230040202739712?collapsed=1" height="400" width="100%" frameborder="0" allowfullscreen="" title="Embedded post" loading="lazy"></iframe>
         </div>
+
+        <!-- Auto-fetched post previews via Hashnode RSS (replace with your Hashnode username) -->
+        <div id="li-auto-posts" style="padding:1rem 1.25rem;border-top:1px solid var(--border)">
+          <div style="font-family:var(--fm);font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.8rem">Latest Articles</div>
+          <div id="li-posts-list" style="display:flex;flex-direction:column;gap:.75rem">
+            <div style="height:60px;background:var(--light);border-radius:8px;animation:shimmer 1.5s infinite"></div>
+            <div style="height:60px;background:var(--light);border-radius:8px;animation:shimmer 1.5s infinite .2s"></div>
+            <div style="height:60px;background:var(--light);border-radius:8px;animation:shimmer 1.5s infinite .4s"></div>
+          </div>
+        </div>
+
         <a href="https://www.linkedin.com/in/eranki-raghavendra-043978b7/" target="_blank" class="li-view-all">
           View all posts on LinkedIn
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
@@ -655,6 +668,80 @@ if(firstStat)statsObs.observe(firstStat.closest('.stat-bar'));
 /* Scroll reveal */
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+
+<style>
+@keyframes shimmer{0%{opacity:.4}50%{opacity:.9}100%{opacity:.4}}
+.li-article-row{display:flex;gap:.75rem;align-items:flex-start;padding:.6rem;border-radius:8px;text-decoration:none;color:inherit;transition:background .2s;border:1px solid transparent}
+.li-article-row:hover{background:var(--light);border-color:var(--border)}
+.li-article-num{width:28px;height:28px;border-radius:6px;background:var(--blue-light);color:var(--blue);font-family:var(--fm);font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.li-article-info{}
+.li-article-title{font-size:.87rem;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:.2rem}
+.li-article-meta{font-family:var(--fm);font-size:.68rem;color:var(--muted)}
+</style>
+
+<script>
+/* ── Auto-fetch Hashnode articles ──
+   Replace HASHNODE_USERNAME with your actual Hashnode username once you sign up.
+   Example: if your blog is "raghav.hashnode.dev", use "raghav"
+   The RSS feed URL will be: https://HASHNODE_USERNAME.hashnode.dev/rss.xml
+*/
+const HASHNODE_USERNAME = 'YOUR_HASHNODE_USERNAME'; // <-- update this once you have Hashnode
+
+async function loadHashnodePosts() {
+  const container = document.getElementById('li-posts-list');
+  if (!container) return;
+
+  // Skip if Hashnode not yet set up
+  if (HASHNODE_USERNAME === 'YOUR_HASHNODE_USERNAME') {
+    container.innerHTML = `
+      ${staticPost('AWS to OCI Migration: What No One Tells You', 'OCI · Migration', '#')}
+      ${staticPost('OCI FSDR vs Traditional DR: A Practical Comparison', 'OCI · DR', '#')}
+      ${staticPost('AIOps for Cloud Ops: Where to Start in 2026', 'AIOps · GenAI', '#')}
+    `;
+    return;
+  }
+
+  try {
+    const rssUrl = `https://${HASHNODE_USERNAME}.hashnode.dev/rss.xml`;
+    const api = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=3`;
+    const res = await fetch(api);
+    const data = await res.json();
+
+    if (data.status === 'ok' && data.items.length > 0) {
+      container.innerHTML = data.items.slice(0, 3).map((item, i) => {
+        const date = new Date(item.pubDate).toLocaleDateString('en-IN', {day:'numeric',month:'short',year:'numeric'});
+        return `<a href="${item.link}" target="_blank" class="li-article-row">
+          <div class="li-article-num">${i + 1}</div>
+          <div class="li-article-info">
+            <div class="li-article-title">${item.title}</div>
+            <div class="li-article-meta">${date}</div>
+          </div>
+        </a>`;
+      }).join('');
+    } else {
+      container.innerHTML = `
+        ${staticPost('AWS to OCI Migration: What No One Tells You', 'OCI · Migration', '#')}
+        ${staticPost('OCI FSDR vs Traditional DR: A Practical Comparison', 'OCI · DR', '#')}
+        ${staticPost('AIOps for Cloud Ops: Where to Start in 2026', 'AIOps · GenAI', '#')}
+      `;
+    }
+  } catch (e) {
+    container.innerHTML = `<div style="font-size:.85rem;color:var(--muted);padding:.5rem">Articles will appear here once your Hashnode blog is live.</div>`;
+  }
+}
+
+function staticPost(title, cat, url) {
+  return `<a href="${url}" class="li-article-row">
+    <div class="li-article-num">★</div>
+    <div class="li-article-info">
+      <div class="li-article-title">${title}</div>
+      <div class="li-article-meta">${cat} · Coming soon on Hashnode</div>
+    </div>
+  </a>`;
+}
+
+loadHashnodePosts();
 </script>
 </body>
 </html>
